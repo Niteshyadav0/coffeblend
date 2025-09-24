@@ -29,9 +29,9 @@ export default function LoginForm() {
     <div className="flex items-center justify-center h-screen bg-gradient-to-r from-gray-900 to-black text-white px-4">
       <form
         onSubmit={handleLogin}
-        className="bg-gray-800/90 backdrop-blur-md p-10 rounded-xl shadow-xl w-full max-w-md border border-gray-700"
+        className="bg-gray-800/90 backdrop-blur-md p-10 rounded-xl shadow-xl w-[400px] max-w-md border border-gray-700"
       >
-        <h2 className="text-3xl font-bold mb-6 text-center">Login</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
 
         {/* Email */}
         <div className="mb-5">

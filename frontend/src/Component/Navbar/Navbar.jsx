@@ -36,22 +36,22 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 w-full z-50 transition-colors duration-500 ${
+        className={`fixed top-0 w-full h-[80px] z-50 transition-colors duration-500 ${
           scrolled ? "bg-black shadow-lg" : "bg-black/60 backdrop-blur-md"
         }`}
       >
-        <div className="max-w-7xl mx-auto flex justify-between items-center py-4 text-white">
+        <div className="max-w-30xl flex justify-between items-center py-4 text-white">
           {/* Logo */}
-          <h1 className="text-4xl font-bold tracking-widest leading-tight pl-6 md:pl-0 animate__animated animate__fadeInDown">
+          <h1 className="text-xl ml-30 font-medium tracking-widest leading-tight pl-6 md:pl-0 animate__animated animate__fadeInDown">
             COFFEE
-            <span className="block text-sm font-normal tracking-[0.25em] text-gray-300">
+            <span className="block text-sm font-normal tracking-[0.25em] text-gray-300 text-center">
               BLEND
             </span>
           </h1>
 
           {/* Nav Links */}
-          <div className="flex items-center gap-10 ml-20">
-            <ul className="hidden md:flex uppercase text-xl font-medium py-6 gap-16">
+          <div className="flex items-center gap-10 mr-10">
+            <ul className="hidden md:flex uppercase text-[12px] py-4 gap-14">
               {[
                 { name: "Home", path: "/" },
                 { name: "Menu", path: "/menu" },
@@ -63,7 +63,7 @@ export default function Navbar() {
                 <li key={i}>
                   <Link
                     to={item.path}
-                    className="relative transition duration-300 hover:text-yellow-500 after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-yellow-500 after:left-0 after:-bottom-1 after:transition-all hover:after:w-full"
+                    className="relative transition duration-300 hover:text-yellow-500 "
                   >
                     {item.name}
                   </Link>
@@ -123,7 +123,7 @@ export default function Navbar() {
               <Link
                 to="/login"
                 onClick={handleLoginNotify}
-                className="relative overflow-hidden px-6 py-2 rounded-[4px] font-bold shadow-lg text-xl
+                className="relative overflow-hidden px-6 py-2 rounded-[4px] font-bold shadow-lg text-[15px]
                 bg-yellow-500 text-white transition-all duration-500 hover:scale-105
                 before:absolute before:inset-0 before:bg-gradient-to-r before:from-yellow-400 before:to-yellow-600 before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-1000"
               >

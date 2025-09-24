@@ -59,12 +59,14 @@ export default function SignupForm() {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gradient-to-r from-gray-900 to-black text-white px-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-gray-900 to-black px-4">
       <form
         onSubmit={handleSignup}
-        className="bg-gray-800/90 backdrop-blur-md p-10 rounded-xl shadow-xl w-full max-w-2xl border border-gray-700"
+        className="bg-gray-800/90 backdrop-blur-md p-8 sm:p-10 rounded-2xl shadow-2xl w-full max-w-md border border-gray-700"
       >
-        <h2 className="text-3xl font-bold mb-6 text-center">Signup</h2>
+        <h2 className="text-3xl font-bold mb-6 text-center text-white">
+          Create Account
+        </h2>
 
         {/* Full Name */}
         <div className="mb-5">
@@ -72,7 +74,7 @@ export default function SignupForm() {
           <input
             type="text"
             placeholder="Enter your full name"
-            className="w-full py-3 px-4 rounded-xl bg-gray-700 border border-gray-600 text-white"
+            className="w-full py-3 px-4 rounded-xl bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-yellow-500"
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
             required
@@ -85,7 +87,7 @@ export default function SignupForm() {
           <input
             type="email"
             placeholder="Enter your email"
-            className="w-full py-3 px-4 rounded-xl bg-gray-700 border border-gray-600 text-white"
+            className="w-full py-3 px-4 rounded-xl bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-yellow-500"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -94,11 +96,13 @@ export default function SignupForm() {
 
         {/* Phone */}
         <div className="mb-5">
-          <label className="block mb-2 text-gray-300 text-sm">Phone Number</label>
+          <label className="block mb-2 text-gray-300 text-sm">
+            Phone Number
+          </label>
           <input
             type="tel"
             placeholder="Enter 10-digit phone"
-            className="w-full py-3 px-4 rounded-xl bg-gray-700 border border-gray-600 text-white"
+            className="w-full py-3 px-4 rounded-xl bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-yellow-500"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             required
@@ -111,7 +115,7 @@ export default function SignupForm() {
           <input
             type={showPassword ? "text" : "password"}
             placeholder="Enter password"
-            className="w-full py-3 px-4 rounded-xl bg-gray-700 border border-gray-600 text-white"
+            className="w-full py-3 px-4 rounded-xl bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-yellow-500"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
@@ -126,11 +130,13 @@ export default function SignupForm() {
 
         {/* Confirm Password */}
         <div className="mb-5 relative">
-          <label className="block mb-2 text-gray-300 text-sm">Confirm Password</label>
+          <label className="block mb-2 text-gray-300 text-sm">
+            Confirm Password
+          </label>
           <input
             type={showConfirmPassword ? "text" : "password"}
             placeholder="Confirm password"
-            className="w-full py-3 px-4 rounded-xl bg-gray-700 border border-gray-600 text-white"
+            className="w-full py-3 px-4 rounded-xl bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-yellow-500"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             required
@@ -150,7 +156,7 @@ export default function SignupForm() {
             <input
               type="text"
               placeholder="Enter OTP"
-              className="w-full py-3 px-4 rounded-xl bg-gray-700 border border-gray-600 text-white"
+              className="w-full py-3 px-4 rounded-xl bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-yellow-500"
               value={otp}
               onChange={(e) => setOtp(e.target.value)}
               required
@@ -158,9 +164,10 @@ export default function SignupForm() {
           </div>
         )}
 
+        {/* Submit */}
         <button
           type="submit"
-          className="w-full py-3 mb-4 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-bold rounded-xl shadow-lg"
+          className="w-full py-3 mb-4 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-bold rounded-xl shadow-lg hover:opacity-90 transition"
         >
           {isOtpSent ? "Verify OTP" : "Signup"}
         </button>
