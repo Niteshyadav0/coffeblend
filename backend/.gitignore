@@ -22,3 +22,7 @@ build/
 # OS-specific
 .DS_Store
 Thumbs.db
+
+
+# PORT=5000
+# MONGO_URI=mongodb://localhost:27017/Coffee_Blend
