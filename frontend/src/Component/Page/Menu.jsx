@@ -117,7 +117,7 @@ export default function MenuPage() {
         <div className="bg-black text-white flex-1 p-8 grid grid-cols-1 md:grid-cols-3 gap-6">
           <div>
             <p className="text-yellow-500 text-xl">📞</p>
-            <h4 className="font-bold">000 (123) 456 7890</h4>
+            <h4 className="font-bold">+977-9823453345</h4>
             <p className="text-gray-400 text-sm mt-2">
               A small river named Duden flows by their place and supplies.
             </p>
@@ -126,7 +126,7 @@ export default function MenuPage() {
             <p className="text-yellow-500 text-xl">📍</p>
             <h4 className="font-bold">198 West 21th Street</h4>
             <p className="text-gray-400 text-sm mt-2">
-              203 Fake St. Mountain View, San Francisco, California, USA
+              Tinkune-32, Kathmandu, Nepal
             </p>
           </div>
           <div>
@@ -425,17 +425,16 @@ export default function MenuPage() {
           <div>
             <h3 className="font-bold mb-4">HAVE A QUESTIONS?</h3>
             <p className="text-gray-400">
-              📍 203 Fake St. Mountain View, San Francisco, California, USA
+              📍 Tinkune-32, Kathmandu, Nepal
             </p>
-            <p className="text-gray-400 mt-2">📞 +2 392 3929 210</p>
-            <p className="text-gray-400 mt-2">✉️ info@yourdomain.com</p>
+            <p className="text-gray-400 mt-2">📞 +977-9823776345</p>
+            <p className="text-gray-400 mt-2">✉️ Coffeeblend@gmail.com</p>
           </div>
         </div>
 
         {/* Bottom */}
         <div className="text-center text-gray-500 mt-12">
-          Copyright ©2025 All rights reserved | This template is made with ❤️ by
-          Colorlib
+          Copyright ©2025 All rights reserved | 
         </div>
       </footer>
     </div>

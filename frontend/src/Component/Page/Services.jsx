@@ -1,24 +1,176 @@
+// src/pages/Services.jsx
 import React from "react";
+import { FaTruck, FaCoffee, FaRegListAlt } from "react-icons/fa";
+import { FaTwitter, FaFacebookF, FaInstagram } from "react-icons/fa";
 
-export default function ServicesHero() {
+const Services = () => {
   return (
-    <div
-      className="relative h-[70vh] bg-cover bg-center flex items-center justify-center"
-      style={{
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=1600&q=80')",
-      }}
-    >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/40"></div>
+    <div className="font-sans">
 
-      {/* Content */}
-      <div className="relative z-10 text-center text-white">
-        <h1 className="text-5xl font-bold tracking-wide">SERVICES</h1>
-        <p className="mt-3 text-lg">
-          <span className="text-gray-300">HOME</span> <span> / SERVICES</span>
+      {/* ---------- HERO SECTION ---------- */}
+      <section
+        className="relative bg-cover bg-center h-[70vh] flex flex-col justify-center items-center text-white"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1400&q=80')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <h1 className="text-5xl font-semibold z-10 tracking-widest">SERVICES</h1>
+        <p className="z-10 mt-3">
+          <span className="text-gray-200">HOME</span>{" "}
+          <span className="mx-2">•</span> SERVICES
         </p>
-      </div>
+      </section>
+
+      {/* ---------- SERVICES SECTION ---------- */}
+      <section className="bg-[#c89f67] text-center py-20 px-4 md:px-12">
+        <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+          {/* Easy to Order */}
+          <div className="flex flex-col items-center">
+            <div className="border border-black p-6 mb-6">
+              <FaRegListAlt size={50} />
+            </div>
+            <h2 className="text-lg font-semibold uppercase mb-3">
+              Easy to Order
+            </h2>
+            <p className="text-sm leading-relaxed text-gray-900 max-w-sm">
+              Even the all-powerful Pointing has no control about the blind texts;
+              it is an almost unorthographic.
+            </p>
+          </div>
+
+          {/* Fastest Delivery */}
+          <div className="flex flex-col items-center">
+            <div className="border border-black p-6 mb-6">
+              <FaTruck size={50} />
+            </div>
+            <h2 className="text-lg font-semibold uppercase mb-3">
+              Fastest Delivery
+            </h2>
+            <p className="text-sm leading-relaxed text-gray-900 max-w-sm">
+              Even the all-powerful Pointing has no control about the blind texts;
+              it is an almost unorthographic.
+            </p>
+          </div>
+
+          {/* Quality Coffee */}
+          <div className="flex flex-col items-center">
+            <div className="border border-black p-6 mb-6">
+              <FaCoffee size={50} />
+            </div>
+            <h2 className="text-lg font-semibold uppercase mb-3">
+              Quality Coffee
+            </h2>
+            <p className="text-sm leading-relaxed text-gray-900 max-w-sm">
+              Even the all-powerful Pointing has no control about the blind texts;
+              it is an almost unorthographic.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ---------- FOOTER SECTION ---------- */}
+      <footer className="bg-black text-gray-300 py-16 px-8 md:px-20">
+        <div className="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+
+          {/* About Us */}
+          <div>
+            <h3 className="text-white uppercase font-semibold mb-4 tracking-wide">
+              About Us
+            </h3>
+            <p className="text-gray-400 leading-relaxed mb-6">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts.
+            </p>
+            <div className="flex space-x-4 text-lg">
+              <a href="#" className="bg-gray-800 p-3 rounded-full hover:bg-gray-700">
+                <FaTwitter />
+              </a>
+              <a href="#" className="bg-gray-800 p-3 rounded-full hover:bg-gray-700">
+                <FaFacebookF />
+              </a>
+              <a href="#" className="bg-gray-800 p-3 rounded-full hover:bg-gray-700">
+                <FaInstagram />
+              </a>
+            </div>
+          </div>
+
+          {/* Recent Blog */}
+          <div>
+            <h3 className="text-white uppercase font-semibold mb-4 tracking-wide">
+              Recent Blog
+            </h3>
+
+            <div className="flex items-start mb-4">
+              <img
+                src="https://images.unsplash.com/photo-1604908176997-6f4d4a5e8a3b?auto=format&fit=crop&w=100&q=80"
+                alt="food"
+                className="w-16 h-16 object-cover mr-4"
+              />
+              <div>
+                <p className="font-medium text-white text-sm">
+                  Even the all-powerful Pointing has no control about
+                </p>
+                <p className="text-xs text-gray-500 mt-1">
+                  Sept 15, 2018 • Admin • 19
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start">
+              <img
+                src="https://images.unsplash.com/photo-1617196036076-7c4b0b7dc893?auto=format&fit=crop&w=100&q=80"
+                alt="pasta"
+                className="w-16 h-16 object-cover mr-4"
+              />
+              <div>
+                <p className="font-medium text-white text-sm">
+                  Even the all-powerful Pointing has no control about
+                </p>
+                <p className="text-xs text-gray-500 mt-1">
+                  Sept 15, 2018 • Admin • 19
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h3 className="text-white uppercase font-semibold mb-4 tracking-wide">
+              Services
+            </h3>
+            <ul className="space-y-2 text-gray-400 text-sm">
+              <li>Cooked</li>
+              <li>Deliver</li>
+              <li>Quality Foods</li>
+              <li>Mixed</li>
+            </ul>
+          </div>
+
+          {/* Have a Questions */}
+          <div>
+            <h3 className="text-white uppercase font-semibold mb-4 tracking-wide">
+              Have a Questions?
+            </h3>
+            <ul className="space-y-3 text-gray-400 text-sm">
+              <li>
+                <span className="block">Tinkune, </span>
+                <span>Tinkune-32, Kathmandu, Nepal</span>
+              </li>
+              <li>+2 392 3929 210</li>
+              <li>coffeeblend@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <p className="text-center text-gray-500 text-sm mt-12 border-t border-gray-800 pt-6">
+          Copyright ©2025 All rights reserved |
+          <span className="text-red-500"></span> 
+        </p>
+      </footer>
     </div>
   );
-}
+};
+
+export default Services;

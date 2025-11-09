@@ -9,8 +9,9 @@ import About from "./Component/Page/About";
 import Shop from "./Component/Page/Shop";
 import Contact from "./Component/Page/Contact";
 import Hero from "./Component/Page/Hero";
-import Login from "./Component/Page/LogIn";
 import SignupForm from "./Component/Page/Signup";
+import LoginForm from "./Component/Page/Login";
+
 
 function App() {
   return (
@@ -22,10 +23,10 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/services" element={<Services />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About/>} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<LoginForm />} />
           <Route path="/signup" element={<SignupForm />} />
           {/* Future expansion */}
           <Route path="/cart" element={<div>Cart Page</div>} />
